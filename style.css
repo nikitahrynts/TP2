@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #000000, #ffffff);
+  background-size: 400% 400%;
+  animation: background 3s ease-in-out infinite;
+}
+div {
+  width: 680px;
+  height: 680px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #ffffff, #000000);
+  border-radius: 10%;
+  left: 50%;
+  top: 50%;
+  background-size: 400% 400%;
+  animation: block_gradient 3s ease-in-out infinite;
+}
+.first {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: first_movement 8s infinite 0.3s ease-in-out;
+}
+.second {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: second_movement 8s infinite 0.45s ease-in-out;
+}
+.third {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: first_movement 8s infinite 0.6s ease-in-out;
+}
+.fourth {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: second_movement 8s infinite 0.75s ease-in-out;
+}
+.fifth {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: first_movement 8s infinite 0.9s ease-in-out;
+}
+.sixth {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: second_movement 8s infinite 1.05s ease-in-out;
+}
+.seventh {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  animation: first_movement 8s infinite 1.2s ease-in-out;
+}
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes block_gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes first_movement {
+  0% {
+    transform: translate(0px) rotate(0deg) scale(1);
+  }
+  12.5% {
+    transform: translate(240px) rotate(-45deg) scale(0.9);
+  }
+  25% {
+    transform: translate(480px) rotate(-90deg) scale(1);
+  }
+  37.5% {
+    transform: translate(480px, 240px) rotate(-135deg) scale(0.9);
+  }
+  50% {
+    transform: translate(480px, 480px) rotate(-180deg) scale(1);
+  }
+  62.5% {
+    transform: translate(240px, 480px) rotate(-225deg) scale(0.9);
+  }
+  75% {
+    transform: translate(0px, 480px) rotate(-270deg) scale(1);
+  }
+  87.5% {
+    transform: translate(0px, 240px) rotate(-315deg) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(-360deg) scale(1);
+  }
+}
+@keyframes second_movement {
+  0% {
+    transform: translate(0px) rotate(0deg) scale(1);
+  }
+  12.5% {
+    transform: translate(240px) rotate(-45deg) scale(0.8);
+  }
+  25% {
+    transform: translate(480px) rotate(-90deg) scale(1);
+  }
+  37.5% {
+    transform: translate(480px, 240px) rotate(-135deg) scale(0.8);
+  }
+  50% {
+    transform: translate(480px, 480px) rotate(-180deg) scale(1);
+  }
+  62.5% {
+    transform: translate(240px, 480px) rotate(-225deg) scale(0.8);
+  }
+  75% {
+    transform: translate(0px, 480px) rotate(-270deg) scale(1);
+  }
+  87.5% {
+    transform: translate(0px, 240px) rotate(-315deg) scale(0.8);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(-360deg) scale(1);
+  }
+}
+ 
